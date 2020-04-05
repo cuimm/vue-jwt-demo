@@ -2,18 +2,31 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">
-首页
-</router-link> |
+        首页
+      </router-link>
+      |
       <router-link to="/profile">
-个人信息
-</router-link> |
+        个人信息
+      </router-link>
+      |
       <router-link to="/login">
-登陆
-</router-link>
+        登陆
+      </router-link>
     </div>
     <router-view/>
   </div>
 </template>
+<script>
+export default {
+  name: 'App',
+  data() {
+    return {}
+  },
+  created() {
+    console.log(this.$options);
+  },
+}
+</script>
 
 <style>
 #app {
